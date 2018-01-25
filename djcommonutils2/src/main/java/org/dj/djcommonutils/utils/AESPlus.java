@@ -10,10 +10,8 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 /**
- * @author qinzy
- * @classname AESPlus
- * @description TODO(可逆加密算法)
- * @date 2015年9月14日 下午1:47:07
+ * author qinzy
+ * date 2015年9月14日 下午1:47:07
  */
 public class AESPlus {
 

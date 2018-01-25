@@ -250,7 +250,6 @@ public class IndexBar extends View {
     /**
      * 显示当前被按下的index的TextView
      *
-     * @return
      */
     public void setmPressedShowTextView(TextView mPressedShowTextView) {
         this.mPressedShowTextView = mPressedShowTextView;
@@ -357,7 +356,7 @@ public class IndexBar extends View {
     public class IndexBarDataHelperImpl {
         /**
          * 如果需要，
-         * 字符->拼音，
+         * 字符 转 拼音，
          *
          * @param datas
          */

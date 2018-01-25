@@ -23,7 +23,7 @@ public class ClearEditText extends AppCompatEditText implements View.OnFocusChan
     }
 
     public ClearEditText(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.editTextStyle);
+        this(context, attrs, android.R.attr.editTextStyle);
     }
 
     private Drawable mClearDrawable;// 一键删除的按钮

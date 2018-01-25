@@ -182,7 +182,7 @@ public class WheelDateUtils extends android.text.format.DateUtils {
     }
 
     /**
-     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期<br/>
+     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期
      *
      * @param dateStr    时间字符串
      * @param dataFormat 当前时间字符串的格式。
@@ -199,7 +199,7 @@ public class WheelDateUtils extends android.text.format.DateUtils {
     }
 
     /**
-     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期<br/>
+     * 将yyyy-MM-dd HH:mm:ss字符串转换成日期
      *
      * @param dateStr yyyy-MM-dd HH:mm:ss字符串
      * @return Date 日期 ,转换异常时返回null。

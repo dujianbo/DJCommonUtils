@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'com.novoda.bintray-release'
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
@@ -11,11 +13,19 @@ android {
 
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -26,4 +36,13 @@ dependencies {
 
     api 'com.github.promeg:tinypinyin:2.0.3' // TinyPinyin核心包，约80KB
     api 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3' // 可选，适用于Android的中国地区词典
+}
+
+publish {
+    userOrg = 'dujianbo'      // bintray注册的用户名
+    groupId = 'com.dj'
+    artifactId = 'djcommonutils'// bintray创建的package
+    publishVersion = '1.0'
+    desc = '自用通用工具等'
+    website = 'https://github.com/dujianbo/DJCommonUtils'
 }
