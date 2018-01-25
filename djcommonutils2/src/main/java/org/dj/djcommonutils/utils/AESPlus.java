@@ -36,8 +36,7 @@ public class AESPlus {
         cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
         byte[] encrypted1 = base64.decode(Hex.decodeHex(strIn.toCharArray()));
         byte[] original = cipher.doFinal(encrypted1);
-        String originalString = new String(original);
-        return originalString;
+        return new String(original);
     }
 
     private static SecretKeySpec getKey(String strKey) throws Exception {
@@ -47,9 +46,6 @@ public class AESPlus {
         for (int i = 0; i < arrBTmp.length && i < arrB.length; i++) {
             arrB[i] = arrBTmp[i];
         }
-
-        SecretKeySpec skeySpec = new SecretKeySpec(arrB, "AES");
-
-        return skeySpec;
+        return new SecretKeySpec(arrB, "AES");
     }
 }
