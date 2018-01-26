@@ -13,7 +13,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -42,7 +42,7 @@ publish {
     userOrg = 'dujianbo'      // bintray注册的用户名
     groupId = 'com.dj'
     artifactId = 'djcommonutils'// bintray创建的package
-    publishVersion = '1.0'
+    publishVersion = '1.1'
     desc = '自用通用工具等'
     website = 'https://github.com/dujianbo/DJCommonUtils'
 }
